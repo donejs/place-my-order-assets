@@ -61,3 +61,23 @@ header {
   .wrapper;
   margin-bottom: @grid-gutter-width/2;
 }
+
+@media (max-width: 767px) {
+ header {
+   a {
+       border-radius: 0;
+       margin-right: 0;
+       -moz-border-radius: 0;
+       -webkit-border-radius: 0;
+   }
+   nav {
+     ul {
+       li {
+         a {
+           border: none;
+         }
+       }
+     }
+   }
+  }
+}
