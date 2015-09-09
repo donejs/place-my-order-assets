@@ -44,6 +44,9 @@ header {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      position: relative;
+      z-index: 1;
+      background-color: @brand-primary;
       
       li {
         display: inline-block; 
@@ -54,6 +57,12 @@ header {
          // line-height: @navbar-height - (@navbar-padding-horizontal*2);
         }  
       }
+
+      /* override bootstrap */
+      &.navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
   }
 }
@@ -62,8 +71,9 @@ header {
   margin-bottom: @grid-gutter-width/2;
 }
 
-@media (max-width: 767px) {
+@media (max-width: @screen-sm-max) {
  header {
+   margin-bottom: 0px;
    a {
        border-radius: 0;
        margin-right: 0;
