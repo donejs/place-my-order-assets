@@ -43,9 +43,6 @@ header {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      position: relative;
-      z-index: 1;
-      background-color: @brand-primary;
       
       li {
         display: inline-block; 
@@ -83,6 +80,12 @@ header {
        -webkit-border-radius: 0;
    }
    nav {
+     .navbar-collapse {
+       position: relative;
+       z-index: 1;
+       background-color: @brand-primary;
+     }
+
      ul {
        li {
          a {
