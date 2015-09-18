@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/donejs/place-my-order-assets",
   "system": {
-    "bit-tabs/tabs.less!$less": "@empty"
+    "map": {
+      "bit-tabs/tabs.less!$less": "./@empty"
+    }
   }
 }
