@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/donejs/place-my-order-assets/issues"
   },
-  "homepage": "https://github.com/donejs/place-my-order-assets"
+  "homepage": "https://github.com/donejs/place-my-order-assets",
+  "system": {
+    "bit-tabs/tabs.less!$less": "@empty"
+  }
 }
