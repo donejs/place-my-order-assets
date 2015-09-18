@@ -1,6 +1,6 @@
 {
   "name": "place-my-order-assets",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Styles and images for place-my-order.com.",
   "main": "less/styles.less!",
   "repository": {
