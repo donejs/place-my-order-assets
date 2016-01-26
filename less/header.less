@@ -4,7 +4,7 @@ header {
   background-color: @navbar-default-bg;
   color: @navbar-default-color;
   text-align: center;
-  
+
   h1 {
     font-size: @font-size-large;
     display: inline-block;
@@ -18,7 +18,7 @@ header {
     color: @navbar-default-link-color;
     .border-radius;
     margin-right: @grid-gutter-width/2;
-    
+
     &:hover {
       color: @navbar-default-link-color;
       background: darken(@navbar-default-bg,10%);
@@ -31,27 +31,27 @@ header {
       background: darken(@navbar-default-bg,20%);
     }
   }
-  
+
   nav {
     .wrapper;
     display: inline-block;
     text-align: left;
-    
+
     ul {
       display: inline-block;
       list-style: none;
       list-style-type: none;
       margin: 0;
       padding: 0;
-      
+
       li {
-        display: inline-block; 
+        display: inline-block;
         a {
           display: block;
           padding: @grid-gutter-width/4 @grid-gutter-width/2;
           border: 1px solid #fff;
          // line-height: @navbar-height - (@navbar-padding-horizontal*2);
-        }  
+        }
       }
 
       /* override bootstrap */
@@ -72,6 +72,7 @@ header {
 
 @media (max-width: @screen-sm-max) {
  header {
+   height: inherit;
    margin-bottom: 0px;
    a {
        border-radius: 0;
