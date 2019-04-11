@@ -8,6 +8,8 @@
     "url": "https://github.com/donejs/place-my-order-assets.git"
   },
   "scripts": {
+    "css": "lessc ./less/styles.less ./css/place-my-order-assets.css",
+    "preversion": "npm run css",
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish"
@@ -22,5 +24,8 @@
     "map": {
       "bit-tabs/tabs.less!$less": "@empty"
     }
+  },
+  "devDependencies": {
+    "less": "^3.9.0"
   }
 }
